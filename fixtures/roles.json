@@ -1,0 +1,33 @@
+{
+  "sample_id": "sample-019",
+  "note": "全部人员、商品、商标均为虚构示例，不对应真实主体；用于演示普通食品营销表述审签的角色分工。",
+  "sides": {
+    "product": {
+      "responsibility": "对素材真实性负责：提交包装与页面、提供配方与检验资料、按批准范围投放；不得审批自己提交的素材",
+      "members": [
+        { "user": "u-linzhiyao", "name": "林知遥", "role": "product_manager", "label": "产品经理", "duty": "发起送审、修订包装版本、对商品类别与宣称意图负责" },
+        { "user": "u-zhouce", "name": "周策", "role": "brand_ops", "label": "品牌运营", "duty": "管理渠道投放、跨渠道复用申请、下架执行" },
+        { "user": "u-hewenshan", "name": "贺闻山", "role": "rnd_formulator", "label": "研发配方师", "duty": "登记配方版本与真实成分含量，配方变更时发布新版" },
+        { "user": "u-censui", "name": "岑穗", "role": "channel_merchandiser", "label": "渠道运营", "duty": "渠道页面上架；绕过审签上旧图属于违规留痕情形" },
+        { "user": "agent-u", "name": "见青经纪（虚构机构）", "role": "celebrity_agent", "label": "明星代言方", "duty": "提供代言授权范围：期限、渠道、受众、覆盖商品清单" }
+      ]
+    },
+    "review": {
+      "responsibility": "独立复核：每条成分或功效暗示核对证据适用范围，出具有前提、有范围的结论",
+      "members": [
+        { "user": "u-weilan", "name": "卫岚", "role": "legal_reviewer", "label": "法务审核员", "duty": "商标状态、名称近似药品、法规适用与法律意见复核" },
+        { "user": "u-baizheng", "name": "柏峥", "role": "compliance_reviewer", "label": "合规审核员", "duty": "营销表述逐条核对证据，识别功效暗示与超范围宣称" },
+        { "user": "u-wrenyue", "name": "闻人悦", "role": "qa_reviewer", "label": "质量审核员", "duty": "检验资料归档，注明抽检批次与适用范围，不用合格报告替代表述审查" },
+        { "user": "u-shaomingheng", "name": "邵明珩", "role": "complaint_handler", "label": "投诉处置专员", "duty": "登记投诉、关联截图时点投放、推动下架与澄清" },
+        { "user": "u-yingtianlan", "name": "应天澜", "role": "compliance_lead", "label": "合规负责人", "duty": "在双角色批准齐备后签发批准单，登记商标/法规变更影响扫描" }
+      ]
+    }
+  },
+  "fictional_subjects": {
+    "product_id": "PRD-TANG-001",
+    "product_name": "棠参饮（虚构普通食品，饮料）",
+    "trademark_id": "TM-TANGSHEN",
+    "celebrity": "江见青（虚构艺人，非真实人物）",
+    "drug_likeness_note": "「棠参片」为虚构药品名称，示例仅演示普通食品名称不得与药品混淆"
+  }
+}

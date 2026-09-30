@@ -1,0 +1,147 @@
+{
+  "generated_for": "普通食品营销表述审签服务·调查还原示例（全部主体虚构）",
+  "complaint_id": "CMP-2026-0912-09",
+  "captured_at": "2026-06-12T20:30:00+08:00",
+  "key_findings": {
+    "packaging_seen": "packaging/PK-TANG@v2",
+    "front_copy": "棠参饮｜人参配方（人工种植人参0.3g/100g）·棠梨味",
+    "recipe_on_packaging": "recipe/RC-TANG@v1",
+    "recipe_actual_at_capture": "recipe/RC-TANG@v2",
+    "actual_ginseng_per_100g": 0.1,
+    "launch_mode": "unauthorized",
+    "decision_at_capture": "reject",
+    "endorsement_coverage_at_capture": [
+      {
+        "ref": "endorsement/ED-JIANGJQ@v1",
+        "celebrity": "江见青（虚构艺人）",
+        "covers_pinned": {
+          "channels": [
+            "tmall",
+            "jd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "product_ids": [
+            "PRD-TANG-001"
+          ],
+          "period": {
+            "from": "2026-03-15",
+            "to": "2026-09-30"
+          }
+        },
+        "pinned_problems_at": [
+          "授权渠道不含 pdd"
+        ],
+        "effective_version_at": "endorsement/ED-JIANGJQ@v2",
+        "effective_problems_at": [],
+        "within_scope_at": true
+      }
+    ],
+    "basis_notes": [
+      {
+        "ref": "recipe/RC-TANG@v1",
+        "current_version": 2,
+        "reason": "该包装依据的配方版本在 2026-06-12T20:30:00+08:00 已被新版替代，正面文案不能再按旧配方宣称，应以现行生产配方重新核对"
+      }
+    ],
+    "reports_not_applicable_to_function_claims": [],
+    "test_reports_attached_to_packaging": [
+      {
+        "ref": "test_report/TR-Q1-2026@v1",
+        "conclusion": "所检质量指标合格",
+        "batches": [
+          "B20260301",
+          "B20260305"
+        ],
+        "tested_items": [
+          "菌落总数",
+          "大肠菌群",
+          "铅",
+          "食品添加剂"
+        ],
+        "scope_note": "仅证明抽样批次的质量指标合格，不证明任何成分含量宣称或功效",
+        "superseded_at_capture": false
+      }
+    ]
+  },
+  "subsequent_actions": [
+    {
+      "at": "2026-06-12T20:00:00+08:00",
+      "type": "placement.observed",
+      "actor": "u-shaomingheng"
+    },
+    {
+      "at": "2026-06-12T20:00:00+08:00",
+      "type": "compliance.incident",
+      "actor": null
+    },
+    {
+      "at": "2026-06-12T20:00:00+08:00",
+      "type": "compliance.incident",
+      "actor": null
+    },
+    {
+      "at": "2026-06-13T08:30:00+08:00",
+      "type": "placement.ended",
+      "actor": "u-shaomingheng"
+    },
+    {
+      "at": "2026-06-13T09:00:00+08:00",
+      "type": "clarification.issued",
+      "actor": "u-shaomingheng"
+    },
+    {
+      "at": "2026-09-12T09:30:00+08:00",
+      "type": "complaint.registered",
+      "actor": "u-shaomingheng"
+    },
+    {
+      "at": "2026-09-12T10:00:00+08:00",
+      "type": "complaint.linked",
+      "actor": "u-shaomingheng"
+    },
+    {
+      "at": "2026-09-13T15:00:00+08:00",
+      "type": "complaint.handled",
+      "actor": "u-shaomingheng"
+    }
+  ],
+  "impact_scans": {
+    "trademark_invalid": {
+      "change_ref": "trademark/TM-TANGSHEN@v2",
+      "live_placements_flagged": [
+        "PL-TMALL-02"
+      ],
+      "channel_pages_flagged": [
+        "channel_page/CP-TMALL@v3",
+        "channel_page/CP-PDD@v2"
+      ],
+      "action_required": "商标状态已变化，仍在投放的素材须立即停止使用并下架澄清；在途审批冻结"
+    },
+    "regulation_reissued": {
+      "change_ref": "regulation/REG-CN-FOODAD@v2",
+      "pending_submissions_flagged": [
+        "SUB-2026-004"
+      ],
+      "action_required": "法规已换版，旧法律意见失效，仍在投放素材须按新规重评后方可继续，在途审批退回重做"
+    }
+  },
+  "blocked_attempts_left_in_ledger": [
+    {
+      "label": "法务基于旧修订号审批（并发冲突）",
+      "code": "concurrency_conflict",
+      "message": "并发审批冲突：素材 SUB-2026-001 已被修订（基线 r1，当前 r2），旧版本审批意见须重新确认"
+    },
+    {
+      "label": "快手渠道+青少年受众超范围投放",
+      "code": "compliance_blocked",
+      "message": "批准范围不含渠道 kuaishou，禁止跨渠道超范围投放"
+    }
+  ],
+  "ledger": {
+    "verified": true,
+    "event_count": 80,
+    "fingerprint_sha256": "14aa7b01d39aaf969bd6b1c88608ffbdb9d22dd71092ff5a5a358537f638488c"
+  }
+}

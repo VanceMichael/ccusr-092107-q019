@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "审签取证包",
+  "description": "服务导出的只增台账事件与完整性结论；事件按 seq 排列，prev_hash/hash 构成哈希链。",
+  "type": "object",
+  "required": ["domain", "exported_at", "verified", "events"],
+  "properties": {
+    "domain": { "const": "food-claim-approval" },
+    "exported_at": { "type": "string" },
+    "verified": { "type": "boolean" },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["seq", "type", "at", "payload", "prev_hash", "hash"],
+        "properties": {
+          "seq": { "type": "integer", "minimum": 0 },
+          "type": {
+            "type": "string",
+            "enum": [
+              "entity.registered",
+              "entity.superseded",
+              "submission.created",
+              "submission.revised",
+              "review.recorded",
+              "review.blocked",
+              "approval.issued",
+              "approval.revoked",
+              "placement.launched",
+              "placement.blocked",
+              "placement.observed",
+              "placement.ended",
+              "compliance.incident",
+              "clarification.issued",
+              "impact.scan",
+              "complaint.registered",
+              "complaint.linked",
+              "complaint.handled"
+            ]
+          },
+          "at": { "type": "string" },
+          "actor": { "type": ["string", "null"] },
+          "payload": { "type": "object" },
+          "prev_hash": { "type": "string", "minLength": 1 },
+          "hash": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

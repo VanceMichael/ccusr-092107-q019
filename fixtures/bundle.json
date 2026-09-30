@@ -1,0 +1,2010 @@
+{
+  "domain": "food-claim-approval",
+  "exported_at": "2026-09-30T09:00:00+08:00",
+  "verified": true,
+  "events": [
+    {
+      "seq": 0,
+      "type": "entity.registered",
+      "at": "2026-03-01T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "category",
+        "id": "CAT-BEVERAGE",
+        "version": 1,
+        "data": {
+          "name": "风味饮料（普通食品）",
+          "ordinary_food": true,
+          "note": "非保健食品、非药品，不得宣称疾病预防治疗或保健功效"
+        }
+      },
+      "prev_hash": "GENESIS",
+      "hash": "7218b0d77660ac13e3b48165237e94bc59931a8e1726d3ae83419fb86b553f1b"
+    },
+    {
+      "seq": 1,
+      "type": "entity.registered",
+      "at": "2026-03-01T10:10:00+08:00",
+      "actor": "u-hewenshan",
+      "payload": {
+        "kind": "recipe",
+        "id": "RC-TANG",
+        "version": 1,
+        "data": {
+          "name": "棠参饮配方",
+          "ingredients": [
+            {
+              "name": "饮用水",
+              "per_100g": 85,
+              "unit": "g"
+            },
+            {
+              "name": "棠梨原汁",
+              "per_100g": 10,
+              "unit": "g"
+            },
+            {
+              "name": "人参（人工种植，5年及以下）",
+              "per_100g": 0.3,
+              "unit": "g"
+            },
+            {
+              "name": "蜂蜜",
+              "per_100g": 4,
+              "unit": "g"
+            }
+          ],
+          "flavorings": [
+            "棠梨香精"
+          ]
+        }
+      },
+      "prev_hash": "7218b0d77660ac13e3b48165237e94bc59931a8e1726d3ae83419fb86b553f1b",
+      "hash": "9fcd575d6fb8ddf883b239490e1811c5c1376b348ea5977fde09e14ab3b15989"
+    },
+    {
+      "seq": 2,
+      "type": "entity.registered",
+      "at": "2026-03-01T10:20:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "trademark",
+        "id": "TM-TANGSHEN",
+        "version": 1,
+        "data": {
+          "name": "棠参",
+          "reg_no_fictional": "TM-X-000001",
+          "status": "registered",
+          "status_label": "已注册",
+          "applicant_fictional": "虚构棠果食品公司"
+        }
+      },
+      "prev_hash": "9fcd575d6fb8ddf883b239490e1811c5c1376b348ea5977fde09e14ab3b15989",
+      "hash": "d8d34336a30f2b16481f38697194940b715315efbb055e7b806ad5a86fb6fb50"
+    },
+    {
+      "seq": 3,
+      "type": "entity.registered",
+      "at": "2026-03-01T10:30:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "regulation",
+        "id": "REG-CN-FOODAD",
+        "version": 1,
+        "data": {
+          "title": "普通食品营销表述规范（虚构示例）",
+          "status": "in_force",
+          "rules": [
+            "普通食品不得标注或暗示疾病预防、治疗功能",
+            "不得借助名称、图案混淆为药品",
+            "成分定量宣称须与真实投料一致"
+          ]
+        }
+      },
+      "prev_hash": "d8d34336a30f2b16481f38697194940b715315efbb055e7b806ad5a86fb6fb50",
+      "hash": "ed15c250df67591eb5ca7b0219730a282a8ffa81f0aea30a2d360dff5ad8a715"
+    },
+    {
+      "seq": 4,
+      "type": "entity.registered",
+      "at": "2026-03-02T09:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "legal_opinion",
+        "id": "LO-01",
+        "version": 1,
+        "data": {
+          "title": "棠参饮包装表述法律意见（首版）",
+          "conclusions": [
+            {
+              "claim_key": "C1",
+              "claim_text": "人参配方（人工种植人参0.3g/100g）",
+              "decision": "permitted",
+              "basis_regulation": "regulation/REG-CN-FOODAD@v1",
+              "note": "含量必须与真实配方一致；人工种植5年及以下人参可作为普通食品原料"
+            },
+            {
+              "claim_key": "C2",
+              "claim_text": "提神抗疲劳，熬夜必备",
+              "decision": "prohibited",
+              "basis_regulation": "regulation/REG-CN-FOODAD@v1",
+              "reason": "抗疲劳属保健功能暗示，普通食品不得使用，抽检合格报告不能替代该结论"
+            },
+            {
+              "claim_key": "C4",
+              "claim_text": "以「棠参」为商品名（与虚构药品「棠参片」近似）",
+              "decision": "permitted_with_conditions",
+              "basis_regulation": "regulation/REG-CN-FOODAD@v1",
+              "required_markings": [
+                "本品为普通食品，不能代替药物"
+              ],
+              "note": "可使用名称近似商标，但正面必须同屏显著标注普通食品身份，禁止任何疗效字样"
+            }
+          ]
+        }
+      },
+      "prev_hash": "ed15c250df67591eb5ca7b0219730a282a8ffa81f0aea30a2d360dff5ad8a715",
+      "hash": "2f5bdc1ccdb66f51d031ac51033fe4300d625b3014af4290df71d96e060b3f5f"
+    },
+    {
+      "seq": 5,
+      "type": "entity.registered",
+      "at": "2026-03-05T14:00:00+08:00",
+      "actor": "u-wrenyue",
+      "payload": {
+        "kind": "test_report",
+        "id": "TR-Q1-2026",
+        "version": 1,
+        "data": {
+          "report_no_fictional": "TR-2026-Q1-0088",
+          "kind_label": "产品质量监督抽检",
+          "sampled_at": "2026-03-03",
+          "conclusion": "所检质量指标合格",
+          "batches": [
+            "B20260301",
+            "B20260305"
+          ],
+          "tested_items": [
+            "菌落总数",
+            "大肠菌群",
+            "铅",
+            "食品添加剂"
+          ],
+          "scope_note": "仅证明抽样批次的质量指标合格，不证明任何成分含量宣称或功效"
+        }
+      },
+      "prev_hash": "2f5bdc1ccdb66f51d031ac51033fe4300d625b3014af4290df71d96e060b3f5f",
+      "hash": "82cd8d1c13ebf7b8bdb33d62a15c73c5d24544d5358b5b72c60c099163684b45"
+    },
+    {
+      "seq": 6,
+      "type": "entity.registered",
+      "at": "2026-03-28T11:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "endorsement",
+        "id": "ED-JIANGJQ",
+        "version": 1,
+        "data": {
+          "celebrity": "江见青（虚构艺人）",
+          "status": "active",
+          "period": {
+            "from": "2026-03-15",
+            "to": "2026-09-30"
+          },
+          "channels": [
+            "tmall",
+            "jd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "product_ids": [
+            "PRD-TANG-001"
+          ],
+          "scope_note": "代言仅覆盖棠参饮一个SKU，授权渠道不含拼多多/快手"
+        }
+      },
+      "prev_hash": "82cd8d1c13ebf7b8bdb33d62a15c73c5d24544d5358b5b72c60c099163684b45",
+      "hash": "39017e1b5bbf6c1226d7d9b3aa5528535156a72b5872c2bc3e082a770cb5d821"
+    },
+    {
+      "seq": 7,
+      "type": "entity.registered",
+      "at": "2026-03-06T15:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 1,
+        "data": {
+          "product_id": "PRD-TANG-001",
+          "name": "棠参饮正面包装 v1",
+          "front_copy": "棠参饮｜人参配方，提神抗疲劳，熬夜必备",
+          "markings": [],
+          "category_ref": "category/CAT-BEVERAGE@v1",
+          "recipe_ref": "recipe/RC-TANG@v1",
+          "trademark_ref": "trademark/TM-TANGSHEN@v1",
+          "endorsement_refs": [],
+          "test_report_refs": [
+            "test_report/TR-Q1-2026@v1"
+          ],
+          "legal_opinion_refs": [
+            "legal_opinion/LO-01@v1"
+          ],
+          "claims": [
+            {
+              "key": "C1",
+              "kind": "ingredient",
+              "text": "人参配方",
+              "ingredient": "人参（人工种植，5年及以下）",
+              "require_min_per_100g": 0.3
+            },
+            {
+              "key": "C2",
+              "kind": "function",
+              "text": "提神抗疲劳，熬夜必备"
+            }
+          ]
+        }
+      },
+      "prev_hash": "39017e1b5bbf6c1226d7d9b3aa5528535156a72b5872c2bc3e082a770cb5d821",
+      "hash": "4f6d3ba31534a7ff1e41586605b034a0ee9b43bfe49c23a59fc75717aeb14405"
+    },
+    {
+      "seq": 8,
+      "type": "entity.registered",
+      "at": "2026-03-06T16:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 1,
+        "data": {
+          "channel_id": "tmall",
+          "title": "天猫旗舰店·棠参饮详情页",
+          "url_fictional": "https://example.invalid/tmall/tang",
+          "shown_packaging": "packaging/PK-TANG@v1"
+        }
+      },
+      "prev_hash": "4f6d3ba31534a7ff1e41586605b034a0ee9b43bfe49c23a59fc75717aeb14405",
+      "hash": "d1e7acce79425694127fa9754342791d06174bbafbfceeec46853d4ff2724446"
+    },
+    {
+      "seq": 9,
+      "type": "entity.registered",
+      "at": "2026-03-06T16:10:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-PDD",
+        "version": 1,
+        "data": {
+          "channel_id": "pdd",
+          "title": "拼多多旗舰店·棠参饮详情页",
+          "url_fictional": "https://example.invalid/pdd/tang",
+          "shown_packaging": "packaging/PK-TANG@v1"
+        }
+      },
+      "prev_hash": "d1e7acce79425694127fa9754342791d06174bbafbfceeec46853d4ff2724446",
+      "hash": "a2873ac36edd39e4a829aa7c97fb922e8af86b6434dfda598d3ae9285806237b"
+    },
+    {
+      "seq": 10,
+      "type": "submission.created",
+      "at": "2026-03-07T09:30:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "product_id": "PRD-TANG-001",
+        "packaging_ref": "packaging/PK-TANG@v1",
+        "channel_page_refs": [
+          "channel_page/CP-TMALL@v1",
+          "channel_page/CP-PDD@v1"
+        ],
+        "submitted_by": "u-linzhiyao",
+        "evaluation": {
+          "at": "2026-03-07T09:30:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v1",
+          "decision": "reject",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C1",
+              "text": "人参配方",
+              "kind": "ingredient",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v1",
+                  "scope": "仅证明「棠参饮配方」配方版本含该成分，适用于按此配方生产的批次；实际含量以投料与成品检验为准"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C2",
+              "text": "提神抗疲劳，熬夜必备",
+              "kind": "function",
+              "status": "blocked",
+              "supported_by": [],
+              "not_applicable": [
+                {
+                  "ref": "test_report/TR-Q1-2026@v1",
+                  "reason": "属于产品质量监督抽检，结论「所检质量指标合格」仅覆盖抽样批次 B20260301、B20260305 的质量指标，不能证明任何功效",
+                  "retired": false
+                }
+              ],
+              "gaps": [
+                "法律意见 legal_opinion/LO-01@v1 明确禁止该表述：抗疲劳属保健功能暗示，普通食品不得使用，抽检合格报告不能替代该结论"
+              ]
+            }
+          ]
+        }
+      },
+      "prev_hash": "a2873ac36edd39e4a829aa7c97fb922e8af86b6434dfda598d3ae9285806237b",
+      "hash": "2b5ea015f147459a120d16de2f54f4624467251c2f72f5bc9f43f636ad7980a4"
+    },
+    {
+      "seq": 11,
+      "type": "review.recorded",
+      "at": "2026-03-07T14:00:00+08:00",
+      "actor": "u-baizheng",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "reviewer": "u-baizheng",
+        "role": "compliance_reviewer",
+        "decision": "reject",
+        "note": "「提神抗疲劳」为功效暗示，法律意见明确禁止；抽检合格不支撑该表述",
+        "revision": 1
+      },
+      "prev_hash": "2b5ea015f147459a120d16de2f54f4624467251c2f72f5bc9f43f636ad7980a4",
+      "hash": "72e6247ec03c70a9bc12e5fbcfea15a872ea85235f8f5fd143700833e02f4cde"
+    },
+    {
+      "seq": 12,
+      "type": "entity.superseded",
+      "at": "2026-03-09T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "72e6247ec03c70a9bc12e5fbcfea15a872ea85235f8f5fd143700833e02f4cde",
+      "hash": "a1311461157e9c8805f3182f0d49fdfbba9a312ca4fa3e6f63c80301f5686d3a"
+    },
+    {
+      "seq": 13,
+      "type": "entity.registered",
+      "at": "2026-03-09T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 2,
+        "data": {
+          "product_id": "PRD-TANG-001",
+          "name": "棠参饮正面包装 v2",
+          "front_copy": "棠参饮｜人参配方（人工种植人参0.3g/100g）·棠梨味",
+          "markings": [
+            "本品为普通食品，不能代替药物"
+          ],
+          "category_ref": "category/CAT-BEVERAGE@v1",
+          "recipe_ref": "recipe/RC-TANG@v1",
+          "trademark_ref": "trademark/TM-TANGSHEN@v1",
+          "endorsement_refs": [
+            "endorsement/ED-JIANGJQ@v1"
+          ],
+          "test_report_refs": [
+            "test_report/TR-Q1-2026@v1"
+          ],
+          "legal_opinion_refs": [
+            "legal_opinion/LO-01@v1"
+          ],
+          "claims": [
+            {
+              "key": "C1",
+              "kind": "ingredient",
+              "text": "人参配方（人工种植人参0.3g/100g）",
+              "ingredient": "人参（人工种植，5年及以下）",
+              "require_min_per_100g": 0.3
+            },
+            {
+              "key": "C3",
+              "kind": "flavor",
+              "text": "棠梨味",
+              "flavor_of": "棠梨原汁"
+            },
+            {
+              "key": "C4",
+              "kind": "name_likeness",
+              "text": "商品名「棠参」与虚构药品「棠参片」近似"
+            }
+          ]
+        }
+      },
+      "prev_hash": "a1311461157e9c8805f3182f0d49fdfbba9a312ca4fa3e6f63c80301f5686d3a",
+      "hash": "016f3a0e5407afa4e27f79e425813979a34c98b09ddf62c2430b10b7417a0c5d"
+    },
+    {
+      "seq": 14,
+      "type": "submission.revised",
+      "at": "2026-03-09T11:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "revision": 2,
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "evaluation": {
+          "at": "2026-03-09T11:00:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v2",
+          "decision": "pass",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C1",
+              "text": "人参配方（人工种植人参0.3g/100g）",
+              "kind": "ingredient",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v1",
+                  "scope": "仅证明「棠参饮配方」配方版本含该成分，适用于按此配方生产的批次；实际含量以投料与成品检验为准"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C3",
+              "text": "棠梨味",
+              "kind": "flavor",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v1",
+                  "scope": "仅证明该配方版本使用了「棠梨原汁」相关原料/香精，风味表述不得延伸为功效暗示"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C4",
+              "text": "商品名「棠参」与虚构药品「棠参片」近似",
+              "kind": "name_likeness",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "legal_opinion/LO-01@v1",
+                  "scope": "仅适用于当前包装版本与普通食品类别；要求 本品为普通食品，不能代替药物"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            }
+          ]
+        },
+        "note": "删除功效暗示，补普通食品身份标注"
+      },
+      "prev_hash": "016f3a0e5407afa4e27f79e425813979a34c98b09ddf62c2430b10b7417a0c5d",
+      "hash": "4a31df7e27bc9dec905ff8fcbb1f640536a6643324e88569f8c99e865d2c23a2"
+    },
+    {
+      "seq": 15,
+      "type": "review.blocked",
+      "at": "2026-03-09T13:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "reviewer": "u-weilan",
+        "role": "legal_reviewer",
+        "reason": "stale_revision",
+        "base_revision": 1,
+        "current_revision": 2
+      },
+      "prev_hash": "4a31df7e27bc9dec905ff8fcbb1f640536a6643324e88569f8c99e865d2c23a2",
+      "hash": "e7fc3cce049397e8bc405db020b9a81446007bd5cf080dfc90393764b521a168"
+    },
+    {
+      "seq": 16,
+      "type": "review.recorded",
+      "at": "2026-03-10T09:00:00+08:00",
+      "actor": "u-baizheng",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "reviewer": "u-baizheng",
+        "role": "compliance_reviewer",
+        "decision": "approve",
+        "note": "三条表述均有对应证据：含量见配方、风味见棠梨汁、名称见附条件意见",
+        "revision": 2
+      },
+      "prev_hash": "e7fc3cce049397e8bc405db020b9a81446007bd5cf080dfc90393764b521a168",
+      "hash": "e4c1304d70ca286694d0abfc696845077a5782f2ad0df6ee70c2918a65db597f"
+    },
+    {
+      "seq": 17,
+      "type": "review.recorded",
+      "at": "2026-03-10T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "submission_id": "SUB-2026-001",
+        "reviewer": "u-weilan",
+        "role": "legal_reviewer",
+        "decision": "approve",
+        "note": "普通食品标识已同屏标注，同意按修订版批准",
+        "revision": 2
+      },
+      "prev_hash": "e4c1304d70ca286694d0abfc696845077a5782f2ad0df6ee70c2918a65db597f",
+      "hash": "5ea43f277c12451cc7b892746e71d2e37a6670631f1a7c20280cfbd63aacfec3"
+    },
+    {
+      "seq": 18,
+      "type": "approval.issued",
+      "at": "2026-03-10T15:00:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-001",
+        "submission_id": "SUB-2026-001",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "scope": {
+          "channel_ids": [
+            "tmall",
+            "jd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "regions": [
+            "中国大陆"
+          ],
+          "valid_from": "2026-03-20",
+          "valid_to": "2026-12-31"
+        },
+        "claim_summary": [
+          {
+            "claim_key": "C1",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C3",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C4",
+            "status": "allowed"
+          }
+        ],
+        "based_on_regulations": [
+          "regulation/REG-CN-FOODAD@v1"
+        ]
+      },
+      "prev_hash": "5ea43f277c12451cc7b892746e71d2e37a6670631f1a7c20280cfbd63aacfec3",
+      "hash": "4c0a3c84c879afaaa0e3b7d13208e088ecf56c154dd8cfb625167e37aa605591"
+    },
+    {
+      "seq": 19,
+      "type": "entity.superseded",
+      "at": "2026-03-19T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "4c0a3c84c879afaaa0e3b7d13208e088ecf56c154dd8cfb625167e37aa605591",
+      "hash": "c3783c90682559d89211acf49cb44e5a4d1213d80bee43b0df38df83248f23cb"
+    },
+    {
+      "seq": 20,
+      "type": "entity.registered",
+      "at": "2026-03-19T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 2,
+        "data": {
+          "channel_id": "tmall",
+          "title": "天猫旗舰店·棠参饮详情页",
+          "url_fictional": "https://example.invalid/tmall/tang",
+          "shown_packaging": "packaging/PK-TANG@v2"
+        }
+      },
+      "prev_hash": "c3783c90682559d89211acf49cb44e5a4d1213d80bee43b0df38df83248f23cb",
+      "hash": "4326138c23a781939dcad82b305a8288c75123f4e628b436f0d1c8cf6ba08159"
+    },
+    {
+      "seq": 21,
+      "type": "placement.launched",
+      "at": "2026-03-20T00:05:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-TMALL-01",
+        "channel_id": "tmall",
+        "channel_page_ref": "channel_page/CP-TMALL@v2",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "audience": "成人普通消费者",
+        "region": "中国大陆",
+        "approval_no": "AP-2026-001",
+        "source": {
+          "type": "new"
+        },
+        "endorsement_refs": [
+          "endorsement/ED-JIANGJQ@v1"
+        ]
+      },
+      "prev_hash": "4326138c23a781939dcad82b305a8288c75123f4e628b436f0d1c8cf6ba08159",
+      "hash": "eadad62f313eb985c4221ed61461ddf444511a373f9473c778efe3035121b5ed"
+    },
+    {
+      "seq": 22,
+      "type": "submission.created",
+      "at": "2026-04-06T09:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "submission_id": "SUB-2026-002",
+        "product_id": "PRD-TANG-001",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "channel_page_refs": [
+          "channel_page/CP-PDD@v1"
+        ],
+        "submitted_by": "u-zhouce",
+        "evaluation": {
+          "at": "2026-04-06T09:00:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v2",
+          "decision": "pass",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C1",
+              "text": "人参配方（人工种植人参0.3g/100g）",
+              "kind": "ingredient",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v1",
+                  "scope": "仅证明「棠参饮配方」配方版本含该成分，适用于按此配方生产的批次；实际含量以投料与成品检验为准"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C3",
+              "text": "棠梨味",
+              "kind": "flavor",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v1",
+                  "scope": "仅证明该配方版本使用了「棠梨原汁」相关原料/香精，风味表述不得延伸为功效暗示"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C4",
+              "text": "商品名「棠参」与虚构药品「棠参片」近似",
+              "kind": "name_likeness",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "legal_opinion/LO-01@v1",
+                  "scope": "仅适用于当前包装版本与普通食品类别；要求 本品为普通食品，不能代替药物"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            }
+          ]
+        }
+      },
+      "prev_hash": "eadad62f313eb985c4221ed61461ddf444511a373f9473c778efe3035121b5ed",
+      "hash": "80e610056a9a24753a2f6e0ebe10dad990e5dd91c8768fc701693db273eacbb1"
+    },
+    {
+      "seq": 23,
+      "type": "review.recorded",
+      "at": "2026-04-06T10:00:00+08:00",
+      "actor": "u-baizheng",
+      "payload": {
+        "submission_id": "SUB-2026-002",
+        "reviewer": "u-baizheng",
+        "role": "compliance_reviewer",
+        "decision": "approve",
+        "note": "素材与已批准版本一致",
+        "revision": 1
+      },
+      "prev_hash": "80e610056a9a24753a2f6e0ebe10dad990e5dd91c8768fc701693db273eacbb1",
+      "hash": "02f6e4deaabeddec7c4d2c46b14178ec42d34610af9fff2385a3eb997d41173b"
+    },
+    {
+      "seq": 24,
+      "type": "review.recorded",
+      "at": "2026-04-06T11:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "submission_id": "SUB-2026-002",
+        "reviewer": "u-weilan",
+        "role": "legal_reviewer",
+        "decision": "approve",
+        "note": "仅限拼多多渠道使用",
+        "revision": 1
+      },
+      "prev_hash": "02f6e4deaabeddec7c4d2c46b14178ec42d34610af9fff2385a3eb997d41173b",
+      "hash": "ac971c2c4df31ee9d7836579099f751decf80173b5e4a90276c7b7a73ac94ea2"
+    },
+    {
+      "seq": 25,
+      "type": "approval.issued",
+      "at": "2026-04-07T09:00:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-002",
+        "submission_id": "SUB-2026-002",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "scope": {
+          "channel_ids": [
+            "pdd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "regions": [
+            "中国大陆"
+          ],
+          "valid_from": "2026-04-07",
+          "valid_to": "2026-12-31"
+        },
+        "claim_summary": [
+          {
+            "claim_key": "C1",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C3",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C4",
+            "status": "allowed"
+          }
+        ],
+        "based_on_regulations": [
+          "regulation/REG-CN-FOODAD@v1"
+        ]
+      },
+      "prev_hash": "ac971c2c4df31ee9d7836579099f751decf80173b5e4a90276c7b7a73ac94ea2",
+      "hash": "17c770cb99d2cb8bdfe30bcdb54dcc1dc8dd4240492455ce8b36ac485add56f7"
+    },
+    {
+      "seq": 26,
+      "type": "placement.launched",
+      "at": "2026-04-08T00:10:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-PDD-01",
+        "channel_id": "pdd",
+        "channel_page_ref": "channel_page/CP-PDD@v1",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "audience": "成人普通消费者",
+        "region": "中国大陆",
+        "approval_no": "AP-2026-002",
+        "source": {
+          "type": "reuse",
+          "from_placement_id": "PL-TMALL-01"
+        },
+        "endorsement_refs": [
+          "endorsement/ED-JIANGJQ@v1"
+        ]
+      },
+      "prev_hash": "17c770cb99d2cb8bdfe30bcdb54dcc1dc8dd4240492455ce8b36ac485add56f7",
+      "hash": "208203046be069c699b2c7c93bd298e9165baffe19c04e28f57ac34608201a45"
+    },
+    {
+      "seq": 27,
+      "type": "compliance.incident",
+      "at": "2026-04-08T00:10:00+08:00",
+      "actor": null,
+      "payload": {
+        "incident_id": "INC-001",
+        "kind": "cross_channel_reuse",
+        "placement_id": "PL-PDD-01",
+        "channel_id": "pdd",
+        "detail": "跨渠道复用：素材由投放 PL-TMALL-01 复用到渠道 pdd，复用范围以 AP-2026-002 记载为准",
+        "from_placement_id": "PL-TMALL-01"
+      },
+      "prev_hash": "208203046be069c699b2c7c93bd298e9165baffe19c04e28f57ac34608201a45",
+      "hash": "b57698ea6d5bb1a9bac97b567a6dd0b40ab25e5950803906018f8f595c1a6a9b"
+    },
+    {
+      "seq": 28,
+      "type": "compliance.incident",
+      "at": "2026-04-08T00:10:00+08:00",
+      "actor": null,
+      "payload": {
+        "incident_id": "INC-001",
+        "kind": "endorsement_out_of_scope",
+        "placement_id": "PL-PDD-01",
+        "channel_id": "pdd",
+        "detail": "endorsement/ED-JIANGJQ@v1 代言使用超范围：授权渠道不含 pdd",
+        "endorsement_ref": "endorsement/ED-JIANGJQ@v1"
+      },
+      "prev_hash": "b57698ea6d5bb1a9bac97b567a6dd0b40ab25e5950803906018f8f595c1a6a9b",
+      "hash": "48d30d6e0dc2e7030ecb4b6157dda9346bc98c49f271472ddf2bbd36f62592b7"
+    },
+    {
+      "seq": 29,
+      "type": "entity.superseded",
+      "at": "2026-04-09T10:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "endorsement",
+        "id": "ED-JIANGJQ",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "48d30d6e0dc2e7030ecb4b6157dda9346bc98c49f271472ddf2bbd36f62592b7",
+      "hash": "62b79798a533207932bca9fb4f34616daae873259dccef809859d743ed1b717d"
+    },
+    {
+      "seq": 30,
+      "type": "entity.registered",
+      "at": "2026-04-09T10:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "endorsement",
+        "id": "ED-JIANGJQ",
+        "version": 2,
+        "data": {
+          "celebrity": "江见青（虚构艺人）",
+          "status": "active",
+          "period": {
+            "from": "2026-03-15",
+            "to": "2026-09-30"
+          },
+          "channels": [
+            "tmall",
+            "jd",
+            "pdd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "product_ids": [
+            "PRD-TANG-001"
+          ],
+          "scope_note": "补充授权拼多多渠道"
+        }
+      },
+      "prev_hash": "62b79798a533207932bca9fb4f34616daae873259dccef809859d743ed1b717d",
+      "hash": "caf44d1e5fb61860acff8b39276dee191c1ff97939a750007ee8c9960dfd1d20"
+    },
+    {
+      "seq": 31,
+      "type": "entity.superseded",
+      "at": "2026-04-09T12:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-PDD",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "caf44d1e5fb61860acff8b39276dee191c1ff97939a750007ee8c9960dfd1d20",
+      "hash": "c064425745961d50633d33a614d8586cdd0ad46b6589231ad12fca07b77df906"
+    },
+    {
+      "seq": 32,
+      "type": "entity.registered",
+      "at": "2026-04-09T12:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-PDD",
+        "version": 2,
+        "data": {
+          "channel_id": "pdd",
+          "title": "拼多多旗舰店·棠参饮详情页",
+          "url_fictional": "https://example.invalid/pdd/tang",
+          "shown_packaging": "packaging/PK-TANG@v2"
+        }
+      },
+      "prev_hash": "c064425745961d50633d33a614d8586cdd0ad46b6589231ad12fca07b77df906",
+      "hash": "b35d3c674a207ae2cf90dd5059a15579eafadea4d57681765bf2a984ffcffffd"
+    },
+    {
+      "seq": 33,
+      "type": "placement.blocked",
+      "at": "2026-05-02T20:00:00+08:00",
+      "actor": "u-censui",
+      "payload": {
+        "placement_id": "PL-KS-ATTEMPT",
+        "channel_id": "kuaishou",
+        "channel_page_ref": null,
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "audience": "青少年",
+        "approval_no": "AP-2026-001",
+        "reason": "批准范围不含渠道 kuaishou，禁止跨渠道超范围投放",
+        "attempted_source": {
+          "type": "new"
+        }
+      },
+      "prev_hash": "b35d3c674a207ae2cf90dd5059a15579eafadea4d57681765bf2a984ffcffffd",
+      "hash": "1129e8cd09d0abcb97d896ab482615f0678f03929931d15bc63447483955d459"
+    },
+    {
+      "seq": 34,
+      "type": "entity.superseded",
+      "at": "2026-06-01T09:00:00+08:00",
+      "actor": "u-hewenshan",
+      "payload": {
+        "kind": "recipe",
+        "id": "RC-TANG",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "1129e8cd09d0abcb97d896ab482615f0678f03929931d15bc63447483955d459",
+      "hash": "3bbad8674cacaa387cbc8a7fa7dd4d06b4d22b00f68f97b84b0303dcfe587d6d"
+    },
+    {
+      "seq": 35,
+      "type": "entity.registered",
+      "at": "2026-06-01T09:00:00+08:00",
+      "actor": "u-hewenshan",
+      "payload": {
+        "kind": "recipe",
+        "id": "RC-TANG",
+        "version": 2,
+        "data": {
+          "name": "棠参饮配方（降本改版）",
+          "ingredients": [
+            {
+              "name": "饮用水",
+              "per_100g": 88,
+              "unit": "g"
+            },
+            {
+              "name": "棠梨原汁",
+              "per_100g": 10,
+              "unit": "g"
+            },
+            {
+              "name": "人参（人工种植，5年及以下）",
+              "per_100g": 0.1,
+              "unit": "g"
+            },
+            {
+              "name": "蜂蜜",
+              "per_100g": 1.5,
+              "unit": "g"
+            }
+          ],
+          "flavorings": [
+            "棠梨香精"
+          ],
+          "change_note": "人参投料量下调，旧版「0.3g/100g」宣称不得继续使用"
+        }
+      },
+      "prev_hash": "3bbad8674cacaa387cbc8a7fa7dd4d06b4d22b00f68f97b84b0303dcfe587d6d",
+      "hash": "cb089a37ce0ac4ae7f69c25dc8eaf9ee4d9caaebc362453d450f2cba31419845"
+    },
+    {
+      "seq": 36,
+      "type": "approval.revoked",
+      "at": "2026-06-05T09:00:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-001",
+        "reason": "配方已变更，旧版含量宣称依据失效"
+      },
+      "prev_hash": "cb089a37ce0ac4ae7f69c25dc8eaf9ee4d9caaebc362453d450f2cba31419845",
+      "hash": "774cfe0849ef383c84ad61043d8a97ce564a757435edcf010911a55a0ce293f8"
+    },
+    {
+      "seq": 37,
+      "type": "approval.revoked",
+      "at": "2026-06-05T09:05:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-002",
+        "reason": "配方已变更，旧版含量宣称依据失效"
+      },
+      "prev_hash": "774cfe0849ef383c84ad61043d8a97ce564a757435edcf010911a55a0ce293f8",
+      "hash": "4c33bc397647eca79995c24b7cc2891ce511685208a2f9806ff3b6dd75ebb189"
+    },
+    {
+      "seq": 38,
+      "type": "placement.ended",
+      "at": "2026-06-05T10:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-TMALL-01",
+        "reason": "配方变更，切换新包装"
+      },
+      "prev_hash": "4c33bc397647eca79995c24b7cc2891ce511685208a2f9806ff3b6dd75ebb189",
+      "hash": "8c8e84a1156644bc2c5a15930335a5f43841e67d34c11264ec07165c49b29d5f"
+    },
+    {
+      "seq": 39,
+      "type": "placement.ended",
+      "at": "2026-06-05T10:05:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-PDD-01",
+        "reason": "配方变更，切换新包装"
+      },
+      "prev_hash": "8c8e84a1156644bc2c5a15930335a5f43841e67d34c11264ec07165c49b29d5f",
+      "hash": "ad8b6265049f7a62acf7c06ae205d75ebc87c57badf4b63a9a16119e951aea5a"
+    },
+    {
+      "seq": 40,
+      "type": "entity.registered",
+      "at": "2026-06-07T14:00:00+08:00",
+      "actor": "u-wrenyue",
+      "payload": {
+        "kind": "test_report",
+        "id": "TR-Q2-2026",
+        "version": 1,
+        "data": {
+          "report_no_fictional": "TR-2026-Q2-0215",
+          "kind_label": "产品质量监督抽检",
+          "sampled_at": "2026-06-07",
+          "conclusion": "所检质量指标合格",
+          "batches": [
+            "B20260603",
+            "B20260606"
+          ],
+          "tested_items": [
+            "菌落总数",
+            "大肠菌群",
+            "铅",
+            "食品添加剂",
+            "人参含量"
+          ],
+          "scope_note": "仅证明新配方抽样批次的质量指标；人参含量实测0.1g/100g，不等于允许任何功效宣称"
+        }
+      },
+      "prev_hash": "ad8b6265049f7a62acf7c06ae205d75ebc87c57badf4b63a9a16119e951aea5a",
+      "hash": "bf9d2f36a15aab8fdeb52f2431b5960687ec11f7294f6cd2c7f8b3f3787494ad"
+    },
+    {
+      "seq": 41,
+      "type": "entity.superseded",
+      "at": "2026-06-06T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 2,
+        "by": 3
+      },
+      "prev_hash": "bf9d2f36a15aab8fdeb52f2431b5960687ec11f7294f6cd2c7f8b3f3787494ad",
+      "hash": "d81e9e2ba0315193687699ac2bae3af25265da75823fa7f441b08de3a5c161dd"
+    },
+    {
+      "seq": 42,
+      "type": "entity.registered",
+      "at": "2026-06-06T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 3,
+        "data": {
+          "product_id": "PRD-TANG-001",
+          "name": "棠参饮正面包装 v3",
+          "front_copy": "棠参饮·棠梨味｜清新果香",
+          "markings": [
+            "本品为普通食品，不能代替药物"
+          ],
+          "category_ref": "category/CAT-BEVERAGE@v1",
+          "recipe_ref": "recipe/RC-TANG@v2",
+          "trademark_ref": "trademark/TM-TANGSHEN@v1",
+          "endorsement_refs": [
+            "endorsement/ED-JIANGJQ@v2"
+          ],
+          "test_report_refs": [
+            "test_report/TR-Q2-2026@v1"
+          ],
+          "legal_opinion_refs": [
+            "legal_opinion/LO-01@v1"
+          ],
+          "claims": [
+            {
+              "key": "C3",
+              "kind": "flavor",
+              "text": "棠梨味",
+              "flavor_of": "棠梨原汁"
+            },
+            {
+              "key": "C4",
+              "kind": "name_likeness",
+              "text": "商品名「棠参」与虚构药品「棠参片」近似"
+            }
+          ]
+        }
+      },
+      "prev_hash": "d81e9e2ba0315193687699ac2bae3af25265da75823fa7f441b08de3a5c161dd",
+      "hash": "788d425fd68db72723b3b55f0671e0fd442d623689438ebb5a286aa0ba904dd2"
+    },
+    {
+      "seq": 43,
+      "type": "submission.created",
+      "at": "2026-06-06T11:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "submission_id": "SUB-2026-003",
+        "product_id": "PRD-TANG-001",
+        "packaging_ref": "packaging/PK-TANG@v3",
+        "channel_page_refs": [],
+        "submitted_by": "u-linzhiyao",
+        "evaluation": {
+          "at": "2026-06-06T11:00:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v3",
+          "decision": "pass",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C3",
+              "text": "棠梨味",
+              "kind": "flavor",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v2",
+                  "scope": "仅证明该配方版本使用了「棠梨原汁」相关原料/香精，风味表述不得延伸为功效暗示"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C4",
+              "text": "商品名「棠参」与虚构药品「棠参片」近似",
+              "kind": "name_likeness",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "legal_opinion/LO-01@v1",
+                  "scope": "仅适用于当前包装版本与普通食品类别；要求 本品为普通食品，不能代替药物"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            }
+          ]
+        }
+      },
+      "prev_hash": "788d425fd68db72723b3b55f0671e0fd442d623689438ebb5a286aa0ba904dd2",
+      "hash": "db584bb9e6e3b312e465e9fd12b41e0fd92a57fff4ac5bb5616751093d5b49c3"
+    },
+    {
+      "seq": 44,
+      "type": "review.recorded",
+      "at": "2026-06-07T09:00:00+08:00",
+      "actor": "u-baizheng",
+      "payload": {
+        "submission_id": "SUB-2026-003",
+        "reviewer": "u-baizheng",
+        "role": "compliance_reviewer",
+        "decision": "approve",
+        "note": "已删去含量宣称，与新配方一致",
+        "revision": 1
+      },
+      "prev_hash": "db584bb9e6e3b312e465e9fd12b41e0fd92a57fff4ac5bb5616751093d5b49c3",
+      "hash": "8c6cc2eb4d6ba6a4dbad50d41ce5299a2754c2fad7c38f7ebbb135efaf252fca"
+    },
+    {
+      "seq": 45,
+      "type": "review.recorded",
+      "at": "2026-06-07T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "submission_id": "SUB-2026-003",
+        "reviewer": "u-weilan",
+        "role": "legal_reviewer",
+        "decision": "approve",
+        "note": "普通食品标注保留",
+        "revision": 1
+      },
+      "prev_hash": "8c6cc2eb4d6ba6a4dbad50d41ce5299a2754c2fad7c38f7ebbb135efaf252fca",
+      "hash": "e004a330afb28f98988a9cdf7c6002c5a3d25d99855d143dbe94d01cfda9ef49"
+    },
+    {
+      "seq": 46,
+      "type": "approval.issued",
+      "at": "2026-06-08T09:00:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-003",
+        "submission_id": "SUB-2026-003",
+        "packaging_ref": "packaging/PK-TANG@v3",
+        "scope": {
+          "channel_ids": [
+            "tmall",
+            "jd",
+            "pdd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "regions": [
+            "中国大陆"
+          ],
+          "valid_from": "2026-06-08",
+          "valid_to": "2026-12-31"
+        },
+        "claim_summary": [
+          {
+            "claim_key": "C3",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C4",
+            "status": "allowed"
+          }
+        ],
+        "based_on_regulations": [
+          "regulation/REG-CN-FOODAD@v1"
+        ]
+      },
+      "prev_hash": "e004a330afb28f98988a9cdf7c6002c5a3d25d99855d143dbe94d01cfda9ef49",
+      "hash": "5976b232da4db464ab35042010afd08701e916e6185050204970471691eceeb1"
+    },
+    {
+      "seq": 47,
+      "type": "entity.superseded",
+      "at": "2026-06-08T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 2,
+        "by": 3
+      },
+      "prev_hash": "5976b232da4db464ab35042010afd08701e916e6185050204970471691eceeb1",
+      "hash": "7ab09273300107fb23cdc216d2a380f9427a1c571383dcc81acca5f7a40e2b89"
+    },
+    {
+      "seq": 48,
+      "type": "entity.registered",
+      "at": "2026-06-08T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 3,
+        "data": {
+          "channel_id": "tmall",
+          "title": "天猫旗舰店·棠参饮详情页",
+          "url_fictional": "https://example.invalid/tmall/tang",
+          "shown_packaging": "packaging/PK-TANG@v3"
+        }
+      },
+      "prev_hash": "7ab09273300107fb23cdc216d2a380f9427a1c571383dcc81acca5f7a40e2b89",
+      "hash": "9af0f30d039ca4af406bbd801ae3e8141e3a72665422b7a1695964dfd711ed0c"
+    },
+    {
+      "seq": 49,
+      "type": "placement.launched",
+      "at": "2026-06-09T00:05:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-TMALL-02",
+        "channel_id": "tmall",
+        "channel_page_ref": "channel_page/CP-TMALL@v3",
+        "packaging_ref": "packaging/PK-TANG@v3",
+        "audience": "成人普通消费者",
+        "region": "中国大陆",
+        "approval_no": "AP-2026-003",
+        "source": {
+          "type": "new"
+        },
+        "endorsement_refs": [
+          "endorsement/ED-JIANGJQ@v2"
+        ]
+      },
+      "prev_hash": "9af0f30d039ca4af406bbd801ae3e8141e3a72665422b7a1695964dfd711ed0c",
+      "hash": "91127b118011ed9835cec298c647473bfa2dafee2b95609ad3daa2783a9f7bdd"
+    },
+    {
+      "seq": 50,
+      "type": "placement.observed",
+      "at": "2026-06-12T20:00:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "placement_id": "PL-PDD-02",
+        "channel_id": "pdd",
+        "channel_page_ref": "channel_page/CP-PDD@v2",
+        "packaging_ref": "packaging/PK-TANG@v2",
+        "audience": "成人普通消费者",
+        "region": "中国大陆",
+        "observed_at": "2026-06-12T19:40:00+08:00",
+        "source": {
+          "type": "old_image",
+          "detail": "渠道运营误用历史素材包重新上架"
+        },
+        "evidence": [
+          "patrol-screenshot-fictional-sha256:9f1c"
+        ]
+      },
+      "prev_hash": "91127b118011ed9835cec298c647473bfa2dafee2b95609ad3daa2783a9f7bdd",
+      "hash": "28ddf144679d10e8069816b5c03411580e85eac141da943c5b2f31df7637082d"
+    },
+    {
+      "seq": 51,
+      "type": "compliance.incident",
+      "at": "2026-06-12T20:00:00+08:00",
+      "actor": null,
+      "payload": {
+        "incident_id": "INC-003",
+        "kind": "old_image_return",
+        "placement_id": "PL-PDD-02",
+        "channel_id": "pdd",
+        "detail": "旧图回流（未批准上架）：现场素材为 packaging/PK-TANG@v2，登记最新版本 v3",
+        "observed_packaging_ref": "packaging/PK-TANG@v2",
+        "current_version": 3
+      },
+      "prev_hash": "28ddf144679d10e8069816b5c03411580e85eac141da943c5b2f31df7637082d",
+      "hash": "c5fa82725caff3f1a1af65be21253311af1530067546126f488f48f61fdb127b"
+    },
+    {
+      "seq": 52,
+      "type": "compliance.incident",
+      "at": "2026-06-12T20:00:00+08:00",
+      "actor": null,
+      "payload": {
+        "incident_id": "INC-003",
+        "kind": "unauthorized_placement",
+        "placement_id": "PL-PDD-02",
+        "channel_id": "pdd",
+        "detail": "该投放没有对应有效批准，属绕过审签的实际上架，须以下架与澄清处置",
+        "observed_packaging_ref": "packaging/PK-TANG@v2"
+      },
+      "prev_hash": "c5fa82725caff3f1a1af65be21253311af1530067546126f488f48f61fdb127b",
+      "hash": "caa20089c4eaa9ec53d6f01bb3a24611e46cfb6c2fcbf3d05a96e05ae7d45859"
+    },
+    {
+      "seq": 53,
+      "type": "placement.ended",
+      "at": "2026-06-13T08:30:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "placement_id": "PL-PDD-02",
+        "reason": "巡检发现旧图回流且无有效批准，强制下架"
+      },
+      "prev_hash": "caa20089c4eaa9ec53d6f01bb3a24611e46cfb6c2fcbf3d05a96e05ae7d45859",
+      "hash": "cb1f517e00b394edb29efe768ac533e8ca1c50652dfd06236ef718d3518a29e8"
+    },
+    {
+      "seq": 54,
+      "type": "clarification.issued",
+      "at": "2026-06-13T09:00:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "clarification_id": "CLR-001",
+        "placement_id": "PL-PDD-02",
+        "channel_id": "pdd",
+        "text": "澄清：2026年6月12日本店拼多多页面误展示旧版包装，其「人参0.3g/100g」表述对应旧配方，现行产品人参含量为0.1g/100g；本品为普通食品，不具备任何功效。已下架并致歉。",
+        "after_takedown": "巡检发现旧图回流且无有效批准，强制下架"
+      },
+      "prev_hash": "cb1f517e00b394edb29efe768ac533e8ca1c50652dfd06236ef718d3518a29e8",
+      "hash": "4158ccbfe3f00ab57ea098fdc0384d065b8f53adf3f61b56095424e4437ea15f"
+    },
+    {
+      "seq": 55,
+      "type": "entity.superseded",
+      "at": "2026-07-15T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "trademark",
+        "id": "TM-TANGSHEN",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "4158ccbfe3f00ab57ea098fdc0384d065b8f53adf3f61b56095424e4437ea15f",
+      "hash": "3fbc12dee1b7f9bc2faa4ca946f3bd2ab8a37354b23cb0e31909b8ad59a80fac"
+    },
+    {
+      "seq": 56,
+      "type": "entity.registered",
+      "at": "2026-07-15T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "trademark",
+        "id": "TM-TANGSHEN",
+        "version": 2,
+        "data": {
+          "name": "棠参",
+          "reg_no_fictional": "TM-X-000001",
+          "status": "invalid",
+          "status_label": "已无效（异议成立）",
+          "applicant_fictional": "虚构棠果食品公司",
+          "change_note": "2026-07-15 商标异议裁定生效，不得继续使用"
+        }
+      },
+      "prev_hash": "3fbc12dee1b7f9bc2faa4ca946f3bd2ab8a37354b23cb0e31909b8ad59a80fac",
+      "hash": "230082d2a138b796571483f9eaea8b72da84623599f0f673bf49c0a2094c3da1"
+    },
+    {
+      "seq": 57,
+      "type": "impact.scan",
+      "at": "2026-07-15T11:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "scan_id": "SCAN-001",
+        "change_ref": "trademark/TM-TANGSHEN@v2",
+        "reason": "商标异议无效，继续使用构成侵权与误导",
+        "live_placements": [
+          {
+            "placement_id": "PL-TMALL-02",
+            "channel_id": "tmall",
+            "packaging_ref": "packaging/PK-TANG@v3",
+            "audience": "成人普通消费者",
+            "approval_no": "AP-2026-003",
+            "launched_at": "2026-06-09T00:05:00+08:00"
+          }
+        ],
+        "pending_submissions": [],
+        "channel_pages": [
+          {
+            "channel_page_ref": "channel_page/CP-TMALL@v3",
+            "shown_packaging": "packaging/PK-TANG@v3"
+          },
+          {
+            "channel_page_ref": "channel_page/CP-PDD@v2",
+            "shown_packaging": "packaging/PK-TANG@v2"
+          }
+        ],
+        "affected_materials": [
+          "packaging/PK-TANG@v3",
+          "packaging/PK-TANG@v2"
+        ],
+        "action_required": "商标状态已变化，仍在投放的素材须立即停止使用并下架澄清；在途审批冻结"
+      },
+      "prev_hash": "230082d2a138b796571483f9eaea8b72da84623599f0f673bf49c0a2094c3da1",
+      "hash": "08eee4346c2bb0436c973192141d6385e00c393f7ebf3670cd07c1326e80f231"
+    },
+    {
+      "seq": 58,
+      "type": "placement.ended",
+      "at": "2026-07-16T08:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-TMALL-02",
+        "reason": "商标无效，停止使用旧标识包装"
+      },
+      "prev_hash": "08eee4346c2bb0436c973192141d6385e00c393f7ebf3670cd07c1326e80f231",
+      "hash": "e5a63868168f5da3225d9c14fd302ce8b9b9ffa2efec660d222c20781a3a60ed"
+    },
+    {
+      "seq": 59,
+      "type": "clarification.issued",
+      "at": "2026-07-16T10:00:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "clarification_id": "CLR-002",
+        "placement_id": "PL-TMALL-02",
+        "channel_id": "tmall",
+        "text": "澄清：因「棠参」商标被裁定无效，本店已更换商标与包装，旧标识商品不再销售，产品本身为普通食品，配方与质量不受影响。",
+        "after_takedown": "商标无效，停止使用旧标识包装"
+      },
+      "prev_hash": "e5a63868168f5da3225d9c14fd302ce8b9b9ffa2efec660d222c20781a3a60ed",
+      "hash": "5d9aaf916e06ae1e3fedeb37f53415b5c18021df4e060937c81658b89bc8fd2f"
+    },
+    {
+      "seq": 60,
+      "type": "entity.registered",
+      "at": "2026-07-20T09:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "trademark",
+        "id": "TM-TANGLI",
+        "version": 1,
+        "data": {
+          "name": "棠里",
+          "reg_no_fictional": "TM-X-000002",
+          "status": "registered",
+          "status_label": "已注册",
+          "applicant_fictional": "虚构棠果食品公司"
+        }
+      },
+      "prev_hash": "5d9aaf916e06ae1e3fedeb37f53415b5c18021df4e060937c81658b89bc8fd2f",
+      "hash": "f7dae62925fe744cba9c7fe2a7584f400209889edf916de7df6c43eb4dfd03a9"
+    },
+    {
+      "seq": 61,
+      "type": "entity.superseded",
+      "at": "2026-07-22T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 3,
+        "by": 4
+      },
+      "prev_hash": "f7dae62925fe744cba9c7fe2a7584f400209889edf916de7df6c43eb4dfd03a9",
+      "hash": "66db8bb21079a64bde382a9de6676285a76a5085e58dad2c9e1e67997ed0e24c"
+    },
+    {
+      "seq": 62,
+      "type": "entity.registered",
+      "at": "2026-07-22T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 4,
+        "data": {
+          "product_id": "PRD-TANG-001",
+          "name": "棠里饮正面包装 v4",
+          "front_copy": "棠里·棠梨味｜清新果香",
+          "markings": [
+            "本品为普通食品，不能代替药物"
+          ],
+          "category_ref": "category/CAT-BEVERAGE@v1",
+          "recipe_ref": "recipe/RC-TANG@v2",
+          "trademark_ref": "trademark/TM-TANGLI@v1",
+          "endorsement_refs": [
+            "endorsement/ED-JIANGJQ@v2"
+          ],
+          "test_report_refs": [
+            "test_report/TR-Q1-2026@v1"
+          ],
+          "legal_opinion_refs": [
+            "legal_opinion/LO-01@v1"
+          ],
+          "claims": [
+            {
+              "key": "C3",
+              "kind": "flavor",
+              "text": "棠梨味",
+              "flavor_of": "棠梨原汁"
+            }
+          ]
+        }
+      },
+      "prev_hash": "66db8bb21079a64bde382a9de6676285a76a5085e58dad2c9e1e67997ed0e24c",
+      "hash": "2d212df58a468233f9f07896c529493cfc1b4e65180886b49e6cdff7723a7090"
+    },
+    {
+      "seq": 63,
+      "type": "entity.superseded",
+      "at": "2026-08-01T00:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "regulation",
+        "id": "REG-CN-FOODAD",
+        "version": 1,
+        "by": 2
+      },
+      "prev_hash": "2d212df58a468233f9f07896c529493cfc1b4e65180886b49e6cdff7723a7090",
+      "hash": "ac54298bc6f2de21c9f035259e02a7454e1890eb9652cb98cc3a2b76f31606ef"
+    },
+    {
+      "seq": 64,
+      "type": "entity.registered",
+      "at": "2026-08-01T00:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "regulation",
+        "id": "REG-CN-FOODAD",
+        "version": 2,
+        "data": {
+          "title": "普通食品营销表述规范（虚构示例）",
+          "status": "in_force",
+          "rules": [
+            "普通食品不得标注或暗示疾病预防、治疗功能",
+            "不得借助名称、图案混淆为药品",
+            "成分定量宣称须与真实投料一致",
+            "新增：名称近似类标注须使用指定字号与对比度"
+          ],
+          "change_note": "2026-08-01 换版，名称近似标注要求加严"
+        }
+      },
+      "prev_hash": "ac54298bc6f2de21c9f035259e02a7454e1890eb9652cb98cc3a2b76f31606ef",
+      "hash": "3eb7f76d087de0afd79fcb8964ca66182749b48fa28b9c639656d3182112260b"
+    },
+    {
+      "seq": 65,
+      "type": "submission.created",
+      "at": "2026-08-02T09:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "submission_id": "SUB-2026-004",
+        "product_id": "PRD-TANG-001",
+        "packaging_ref": "packaging/PK-TANG@v4",
+        "channel_page_refs": [],
+        "submitted_by": "u-linzhiyao",
+        "evaluation": {
+          "at": "2026-08-02T09:00:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v4",
+          "decision": "pass",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C3",
+              "text": "棠梨味",
+              "kind": "flavor",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v2",
+                  "scope": "仅证明该配方版本使用了「棠梨原汁」相关原料/香精，风味表述不得延伸为功效暗示"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            }
+          ]
+        }
+      },
+      "prev_hash": "3eb7f76d087de0afd79fcb8964ca66182749b48fa28b9c639656d3182112260b",
+      "hash": "62a0bdc792cf55c868f467377f257d38b3d8637319ff12216cdf981227a5862d"
+    },
+    {
+      "seq": 66,
+      "type": "impact.scan",
+      "at": "2026-08-02T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "scan_id": "SCAN-002",
+        "change_ref": "regulation/REG-CN-FOODAD@v2",
+        "reason": "规范换版，依据旧版出具的法律意见需重出",
+        "live_placements": [],
+        "pending_submissions": [
+          {
+            "submission_id": "SUB-2026-004",
+            "packaging_ref": "packaging/PK-TANG@v4",
+            "status": "pending"
+          }
+        ],
+        "channel_pages": [
+          {
+            "channel_page_ref": "channel_page/CP-TMALL@v3",
+            "shown_packaging": "packaging/PK-TANG@v3"
+          },
+          {
+            "channel_page_ref": "channel_page/CP-PDD@v2",
+            "shown_packaging": "packaging/PK-TANG@v2"
+          }
+        ],
+        "affected_materials": [
+          "packaging/PK-TANG@v4",
+          "packaging/PK-TANG@v3",
+          "packaging/PK-TANG@v2"
+        ],
+        "action_required": "法规已换版，旧法律意见失效，仍在投放素材须按新规重评后方可继续，在途审批退回重做"
+      },
+      "prev_hash": "62a0bdc792cf55c868f467377f257d38b3d8637319ff12216cdf981227a5862d",
+      "hash": "e36ab70fba909b0c8c017ab09680f35cccc251b594a2d5ad2e3f57dc62924bde"
+    },
+    {
+      "seq": 67,
+      "type": "entity.registered",
+      "at": "2026-08-04T09:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "kind": "legal_opinion",
+        "id": "LO-02",
+        "version": 1,
+        "data": {
+          "title": "棠里饮包装法律意见（按新规重出）",
+          "conclusions": [
+            {
+              "claim_key": "C4",
+              "claim_text": "名称近似风险标注（新商标无近似问题，仅保留普通食品身份标注）",
+              "decision": "permitted_with_conditions",
+              "basis_regulation": "regulation/REG-CN-FOODAD@v2",
+              "required_markings": [
+                "本品为普通食品，不能代替药物"
+              ],
+              "note": "按 v2 新规指定字号同屏标注"
+            }
+          ]
+        }
+      },
+      "prev_hash": "e36ab70fba909b0c8c017ab09680f35cccc251b594a2d5ad2e3f57dc62924bde",
+      "hash": "563eab010c7678a012c51dc970f0306d6f5ab904351fda8614c4388ad5c15140"
+    },
+    {
+      "seq": 68,
+      "type": "entity.superseded",
+      "at": "2026-08-05T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 4,
+        "by": 5
+      },
+      "prev_hash": "563eab010c7678a012c51dc970f0306d6f5ab904351fda8614c4388ad5c15140",
+      "hash": "b581be89f29affb737323f285f32df7922394c0033a1cfd56cf50f79c78563bc"
+    },
+    {
+      "seq": 69,
+      "type": "entity.registered",
+      "at": "2026-08-05T10:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "kind": "packaging",
+        "id": "PK-TANG",
+        "version": 5,
+        "data": {
+          "product_id": "PRD-TANG-001",
+          "name": "棠里饮正面包装 v5",
+          "front_copy": "棠里·棠梨味｜清新果香",
+          "markings": [
+            "本品为普通食品，不能代替药物"
+          ],
+          "category_ref": "category/CAT-BEVERAGE@v1",
+          "recipe_ref": "recipe/RC-TANG@v2",
+          "trademark_ref": "trademark/TM-TANGLI@v1",
+          "endorsement_refs": [
+            "endorsement/ED-JIANGJQ@v2"
+          ],
+          "test_report_refs": [
+            "test_report/TR-Q2-2026@v1"
+          ],
+          "legal_opinion_refs": [
+            "legal_opinion/LO-02@v1"
+          ],
+          "claims": [
+            {
+              "key": "C3",
+              "kind": "flavor",
+              "text": "棠梨味",
+              "flavor_of": "棠梨原汁"
+            },
+            {
+              "key": "C4",
+              "kind": "name_likeness",
+              "text": "普通食品身份标注按新规执行"
+            }
+          ]
+        }
+      },
+      "prev_hash": "b581be89f29affb737323f285f32df7922394c0033a1cfd56cf50f79c78563bc",
+      "hash": "21e9e841050d614a44d9105f60a13dbca1bcc93c8dd5be57d2a580c5c3716559"
+    },
+    {
+      "seq": 70,
+      "type": "submission.revised",
+      "at": "2026-08-06T09:00:00+08:00",
+      "actor": "u-linzhiyao",
+      "payload": {
+        "submission_id": "SUB-2026-004",
+        "revision": 2,
+        "packaging_ref": "packaging/PK-TANG@v5",
+        "evaluation": {
+          "at": "2026-08-06T09:00:00+08:00",
+          "packaging_ref": "packaging/PK-TANG@v5",
+          "decision": "pass",
+          "basis_notes": [],
+          "results": [
+            {
+              "claim_key": "C3",
+              "text": "棠梨味",
+              "kind": "flavor",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "recipe/RC-TANG@v2",
+                  "scope": "仅证明该配方版本使用了「棠梨原汁」相关原料/香精，风味表述不得延伸为功效暗示"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            },
+            {
+              "claim_key": "C4",
+              "text": "普通食品身份标注按新规执行",
+              "kind": "name_likeness",
+              "status": "allowed",
+              "supported_by": [
+                {
+                  "ref": "legal_opinion/LO-02@v1",
+                  "scope": "仅适用于当前包装版本与普通食品类别；要求 本品为普通食品，不能代替药物"
+                }
+              ],
+              "not_applicable": [],
+              "gaps": []
+            }
+          ]
+        },
+        "note": "改用依据新规的法律意见"
+      },
+      "prev_hash": "21e9e841050d614a44d9105f60a13dbca1bcc93c8dd5be57d2a580c5c3716559",
+      "hash": "6ec5a865824c26f00dd6f3624d089859f10bd5486b4d1e6046b2a019c9502744"
+    },
+    {
+      "seq": 71,
+      "type": "review.recorded",
+      "at": "2026-08-07T09:00:00+08:00",
+      "actor": "u-baizheng",
+      "payload": {
+        "submission_id": "SUB-2026-004",
+        "reviewer": "u-baizheng",
+        "role": "compliance_reviewer",
+        "decision": "approve",
+        "note": "表述与新配方一致",
+        "revision": 2
+      },
+      "prev_hash": "6ec5a865824c26f00dd6f3624d089859f10bd5486b4d1e6046b2a019c9502744",
+      "hash": "c9d38d5fa5847e30f78ba397e5038892de01b14bf20d73f7eb7a12029202d0de"
+    },
+    {
+      "seq": 72,
+      "type": "review.recorded",
+      "at": "2026-08-07T10:00:00+08:00",
+      "actor": "u-weilan",
+      "payload": {
+        "submission_id": "SUB-2026-004",
+        "reviewer": "u-weilan",
+        "role": "legal_reviewer",
+        "decision": "approve",
+        "note": "已按新规复核",
+        "revision": 2
+      },
+      "prev_hash": "c9d38d5fa5847e30f78ba397e5038892de01b14bf20d73f7eb7a12029202d0de",
+      "hash": "4d4fde98104e092e5dc8ecc8f5ec3f44970e4b626a27cc7421a369e80468f3c0"
+    },
+    {
+      "seq": 73,
+      "type": "approval.issued",
+      "at": "2026-08-08T09:00:00+08:00",
+      "actor": "u-yingtianlan",
+      "payload": {
+        "approval_no": "AP-2026-005",
+        "submission_id": "SUB-2026-004",
+        "packaging_ref": "packaging/PK-TANG@v5",
+        "scope": {
+          "channel_ids": [
+            "tmall",
+            "jd",
+            "pdd"
+          ],
+          "audiences": [
+            "成人普通消费者"
+          ],
+          "regions": [
+            "中国大陆"
+          ],
+          "valid_from": "2026-08-08",
+          "valid_to": "2026-12-31"
+        },
+        "claim_summary": [
+          {
+            "claim_key": "C3",
+            "status": "allowed"
+          },
+          {
+            "claim_key": "C4",
+            "status": "allowed"
+          }
+        ],
+        "based_on_regulations": [
+          "regulation/REG-CN-FOODAD@v2"
+        ]
+      },
+      "prev_hash": "4d4fde98104e092e5dc8ecc8f5ec3f44970e4b626a27cc7421a369e80468f3c0",
+      "hash": "8a2ec0f8079642d1135d4fd9c4e0a106c55aab410e6d4931b15519b77cbd8ab5"
+    },
+    {
+      "seq": 74,
+      "type": "entity.superseded",
+      "at": "2026-08-11T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 3,
+        "by": 4
+      },
+      "prev_hash": "8a2ec0f8079642d1135d4fd9c4e0a106c55aab410e6d4931b15519b77cbd8ab5",
+      "hash": "282f56f7e97be141c8e237a39bae9383fc5c95a11790bf08ad11c5a5d41e3b37"
+    },
+    {
+      "seq": 75,
+      "type": "entity.registered",
+      "at": "2026-08-11T18:00:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "kind": "channel_page",
+        "id": "CP-TMALL",
+        "version": 4,
+        "data": {
+          "channel_id": "tmall",
+          "title": "天猫旗舰店·棠里饮详情页",
+          "url_fictional": "https://example.invalid/tmall/tangli",
+          "shown_packaging": "packaging/PK-TANG@v5"
+        }
+      },
+      "prev_hash": "282f56f7e97be141c8e237a39bae9383fc5c95a11790bf08ad11c5a5d41e3b37",
+      "hash": "bbe0f496874f7766d1b403f7fc029451d8aa18cecbdbd6b35c3c1a93f20589de"
+    },
+    {
+      "seq": 76,
+      "type": "placement.launched",
+      "at": "2026-08-12T00:05:00+08:00",
+      "actor": "u-zhouce",
+      "payload": {
+        "placement_id": "PL-TMALL-03",
+        "channel_id": "tmall",
+        "channel_page_ref": "channel_page/CP-TMALL@v4",
+        "packaging_ref": "packaging/PK-TANG@v5",
+        "audience": "成人普通消费者",
+        "region": "中国大陆",
+        "approval_no": "AP-2026-005",
+        "source": {
+          "type": "new"
+        },
+        "endorsement_refs": [
+          "endorsement/ED-JIANGJQ@v2"
+        ]
+      },
+      "prev_hash": "bbe0f496874f7766d1b403f7fc029451d8aa18cecbdbd6b35c3c1a93f20589de",
+      "hash": "2c12acc4ed3ceb37608711308e6209d66acfa2b764225ccf172a3fdf420177af"
+    },
+    {
+      "seq": 77,
+      "type": "complaint.registered",
+      "at": "2026-09-12T09:30:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "complaint_id": "CMP-2026-0912-09",
+        "channel_id": "pdd",
+        "captured_at": "2026-06-12T20:30:00+08:00",
+        "captured_packaging_ref": "packaging/PK-TANG@v2",
+        "description": "截图显示拼多多页面宣称「人参0.3g/100g」并有明星江见青形象，质疑含量与功效，要求核实当时在售版本与依据。仅有一份抽检合格报告不能说明问题。",
+        "evidence": [
+          "complaint-screenshot-fictional-sha256:7d2a",
+          "complaint-video-fictional-sha256:b08e"
+        ]
+      },
+      "prev_hash": "2c12acc4ed3ceb37608711308e6209d66acfa2b764225ccf172a3fdf420177af",
+      "hash": "8c038ea49d2d812f5e9cfe5c31f69d18656a3cfe67c421851a84c88ce7d5a0f1"
+    },
+    {
+      "seq": 78,
+      "type": "complaint.linked",
+      "at": "2026-09-12T10:00:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "complaint_id": "CMP-2026-0912-09",
+        "linked_placement_id": "PL-PDD-02",
+        "packaging_ref_at_capture": "packaging/PK-TANG@v2",
+        "matched_candidates": [
+          "PL-PDD-02"
+        ],
+        "reconstruction_summary": {
+          "launched_at": "2026-06-12T19:40:00+08:00",
+          "audience": "成人普通消费者",
+          "packaging_ref": "packaging/PK-TANG@v2"
+        }
+      },
+      "prev_hash": "8c038ea49d2d812f5e9cfe5c31f69d18656a3cfe67c421851a84c88ce7d5a0f1",
+      "hash": "39bc787627f43294ea2e5575447d639ac72fa83677ff5b22ea79d490ed8c8643"
+    },
+    {
+      "seq": 79,
+      "type": "complaint.handled",
+      "at": "2026-09-13T15:00:00+08:00",
+      "actor": "u-shaomingheng",
+      "payload": {
+        "complaint_id": "CMP-2026-0912-09",
+        "decision": "部分属实并已处置",
+        "note": "截图对应未批准的旧图回流投放，当晚已下架、次日澄清；现行含量0.1g/100g；代言当晚授权已覆盖pdd但商品现使用新包装；向投诉人书面反馈并留档。"
+      },
+      "prev_hash": "39bc787627f43294ea2e5575447d639ac72fa83677ff5b22ea79d490ed8c8643",
+      "hash": "75fdd47ad581cdcf426fe7609c703e628527f3eadf537eff654f485df2c8341b"
+    }
+  ]
+}

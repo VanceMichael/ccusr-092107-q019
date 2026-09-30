@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "build:fixtures": "node scripts/export-fixtures.mjs"
   }
 }
