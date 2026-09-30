@@ -1,0 +1,99 @@
+{
+  "policy": {
+    "required_roles": {
+      "packaging": ["regulatory_reviewer", "legal_reviewer", "quality_reviewer"],
+      "channel_page": ["regulatory_reviewer", "legal_reviewer"]
+    }
+  },
+  "roles": [
+    { "id": "product_manager", "name": "产品经理", "duties": ["提交素材", "发起送审"] },
+    { "id": "regulatory_reviewer", "name": "法规审核", "duties": ["核对商品类别与标签法规"] },
+    { "id": "legal_reviewer", "name": "法务审核", "duties": ["核对商标状态、代言合同与法律意见"] },
+    { "id": "quality_reviewer", "name": "质量审核", "duties": ["核对配方与检验资料"] }
+  ],
+  "products": [
+    {
+      "id": "prod-collagen-drink",
+      "name": "悦颜胶原蛋白肽风味饮品（虚构样例）",
+      "category": "cat-beverage",
+      "trademark": "tm-yueyan",
+      "note": "普通食品，与同名药品配料不同，不得宣称功效"
+    }
+  ],
+  "entities": [
+    {
+      "kind": "category",
+      "id": "cat-beverage",
+      "version": 1,
+      "validFrom": "2026-01-01T00:00:00Z",
+      "payload": {
+        "class": "普通食品",
+        "subcategory": "蛋白饮料",
+        "constraints": ["不得宣称保健功能", "不得宣称疾病预防或治疗作用"]
+      }
+    },
+    {
+      "kind": "formula",
+      "id": "f-collagen",
+      "version": 1,
+      "validFrom": "2026-01-01T00:00:00Z",
+      "payload": {
+        "ingredients": ["水", "胶原蛋白肽", "赤藓糖醇", "柠檬酸", "食用香精"],
+        "note": "与同名药品成分完全不同"
+      }
+    },
+    {
+      "kind": "trademark",
+      "id": "tm-yueyan",
+      "version": 1,
+      "validFrom": "2026-01-01T00:00:00Z",
+      "payload": { "mark": "悦颜（虚构商标）", "status": "已注册", "classes": ["32"], "owner": "示例公司" }
+    },
+    {
+      "kind": "endorsement",
+      "id": "end-star",
+      "version": 1,
+      "validFrom": "2026-01-15T00:00:00Z",
+      "payload": {
+        "celebrity": "虚构艺人甲",
+        "scope": {
+          "supports": ["endorsement_presence"],
+          "products": ["prod-collagen-drink"],
+          "channels": ["tmall", "douyin"],
+          "validFrom": "2026-02-01T00:00:00Z",
+          "validTo": "2026-12-31T23:59:59Z"
+        },
+        "note": "仅覆盖胶原蛋白肽饮品，不含同品牌其他商品"
+      }
+    },
+    {
+      "kind": "inspection",
+      "id": "insp-2026q1",
+      "version": 1,
+      "validFrom": "2026-01-10T00:00:00Z",
+      "payload": {
+        "conclusion": "所检项目合格",
+        "scope": {
+          "supports": ["ingredient_content"],
+          "items": ["胶原蛋白肽含量", "微生物指标"],
+          "batches": ["B20260105", "B20260210"],
+          "validFrom": "2026-01-10T00:00:00Z",
+          "validTo": "2026-09-01T00:00:00Z"
+        },
+        "limitation": "仅证明所检批次的所检项目，不证明任何功效"
+      }
+    },
+    {
+      "kind": "legal_opinion",
+      "id": "lo-claims",
+      "version": 1,
+      "validFrom": "2026-01-20T00:00:00Z",
+      "payload": {
+        "scope": { "supports": ["ingredient_content", "endorsement_presence"], "validFrom": "2026-01-20T00:00:00Z" },
+        "clears": ["与检验报告一致的成分含量表述"],
+        "rejects": ["任何功效暗示"],
+        "basis": ["广告法", "食品安全法"]
+      }
+    }
+  ]
+}
